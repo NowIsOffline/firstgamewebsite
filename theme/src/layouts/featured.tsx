@@ -52,32 +52,32 @@ export function FeaturedLayout({ children, frontMatter, pageMap }: FeaturedLayou
                 )}
 
                 {/* 分类游戏列表 */}
-                {categories.length > 0 ? (
-                    categories.map((category) => {
-                        const games = getFeaturedGames(category);
-                        if (games.length === 0) return null;
-
-                        return (
-                            <GameCarousel
-                                key={category}
-                                title={getCategoryTitle(category)}
-                                games={games}
-                            />
-                        );
-                    })
-                ) : (
-                    <div className="text-center py-12">
-                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-800 mb-4">
-                            <Icon icon="material-symbols:games-outline" className="w-8 h-8 text-gray-400" />
-                        </div>
-                        <h3 className="text-lg font-medium text-theme-text-primary mb-2">
-                            No Categories Found
-                        </h3>
-                        <p className="text-sm text-theme-text-secondary">
-                            Please add some categories in the frontmatter to display games.
-                        </p>
-                    </div>
-                )}
+                {/*{categories.length > 0 ? (*/}
+                {/*    categories.map((category) => {*/}
+                {/*        const games = getFeaturedGames(category);*/}
+                {/*        if (games.length === 0) return null;*/}
+                
+                {/*        return (*/}
+                {/*            <GameCarousel*/}
+                {/*                key={category}*/}
+                {/*                title={getCategoryTitle(category)}*/}
+                {/*                games={games}*/}
+                {/*            />*/}
+                {/*        );*/}
+                {/*    })*/}
+                {/*) : (*/}
+                {/*    <div className="text-center py-12">*/}
+                {/*        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-800 mb-4">*/}
+                {/*            <Icon icon="material-symbols:games-outline" className="w-8 h-8 text-gray-400" />*/}
+                {/*        </div>*/}
+                {/*        <h3 className="text-lg font-medium text-theme-text-primary mb-2">*/}
+                {/*            No Categories Found*/}
+                {/*        </h3>*/}
+                {/*        <p className="text-sm text-theme-text-secondary">*/}
+                {/*            Please add some categories in the frontmatter to display games.*/}
+                {/*        </p>*/}
+                {/*    </div>*/}
+                {/*)}*/}
 
                 {/* MDX 内容 */}
                 <div className="mt-8 prose dark:prose-invert prose-slate max-w-none">

@@ -42,13 +42,13 @@ const i18nConfig = {
 
 // 网站基础配置
 const SITE_CONFIG = {
-  url: "https://example.com",
-  title: "Game Launch Boost",
-  twitter: "@example",
-  siteName: "Game Launch Boost",
+  url: "https://iffunny.com",
+  title: "If funny",
+  twitter: "@WhiteOffline",
+  siteName: "If funny",
   // Logo 配置
   logo: {
-    text: "Game Launch Boost",
+    text: "If funny",
     image: "/logo.svg",
     height: 32,
   },
@@ -58,7 +58,7 @@ const SITE_CONFIG = {
   features: {
     i18n: true, // 是否启用多语言启用后将会读取 SUPPORTED_LOCALES 的默认语言作为网站语言
     themeSwitch: true, // 是否启用主题切换
-    defaultTheme: "light", // 默认颜色模式: light 或 dark
+    defaultTheme: "dark", // 默认颜色模式: light 或 dark
   },
   // 使用生成的 i18n 配置
   i18nConfig,

@@ -42,7 +42,7 @@ const SITE_CONFIG = {
   features: {
     i18n: false, // 是否启用多语言启用后将会读取 SUPPORTED_LOCALES 的默认语言作为网站语言
     themeSwitch: false, // 是否启用主题切换
-    defaultTheme: "light", // 默认颜色模式: light 或 dark
+    defaultTheme: "dark", // 默认颜色模式: light 或 dark
   },
   // Logo 配置
   logo: {
